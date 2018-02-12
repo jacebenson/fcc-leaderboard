@@ -1,17 +1,10 @@
 # This file is a template, and might need editing before it works on your project.
 # Full project: https://gitlab.com/pages/plain-html
-image: node:4.2.2
-
-build: 
-  stage: build
-  script:
-  - npm install
-  - npm run build
-
+image: alpine:latest
 pages:
   stage: deploy
   script:
-  - mv build public
+    - cp -r build/* public
   artifacts:
     paths:
     - public

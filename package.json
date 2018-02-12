@@ -19,9 +19,7 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js build-rm-dir build-mv-dir",
-    "build-rm-dir": "rm -rf ../../react/leaderboard/",
-    "build-mv-dir": "mv build/ ../../react/leaderboard",
+    "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
